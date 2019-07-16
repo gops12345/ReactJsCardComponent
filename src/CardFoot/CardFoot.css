@@ -1,0 +1,17 @@
+.cardFooter{
+    width: 35%;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px 30px 10px 30px;
+    box-shadow: 0px 2px 2px #eee; 
+    text-align: justify;
+}
+
+
+
+.footerHeading{
+    font-weight: bold;
+}
