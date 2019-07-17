@@ -26,8 +26,8 @@ const card = (props) =>{
                 DEV
             </div>
             
-        <h1>{props.bodyMessage}</h1>
-        
+       
+        <textarea name='text' rows='5' cols = '80' wrap ='soft'></textarea>
 
         <div className={styles.side_box}>
            <p1 className={props.nameColor.join(' ')}>{props.name}</p1> 

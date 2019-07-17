@@ -87,7 +87,7 @@ class Card extends Component{
             }
         
             
-
+            const name = null;
         const classr = [styles.box, styles.red];
         const classb = [styles.box, styles.blue];
         const classg = [styles.box, styles.green];
