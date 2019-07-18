@@ -4,7 +4,7 @@ import styles from "../CardHeader/CardHeader.css";
 
 const card = props => {
   const styleCardBody = {
-    backgroundColor: "green",
+    backgroundColor: "orange",
     width: "35%",
     boxShadow: "0px 2px 2px 2px #ccc",
     borderRadius: "5px",
@@ -20,7 +20,7 @@ const card = props => {
     nameColor.push(styles.textred);
   }
   if (props.ClickedBlue) {
-    styleCardBody.backgroundColor = "blue";
+    styleCardBody.backgroundColor = "palevioletred";
     nameColor.push(styles.textred);
   }
   if (props.ClickedGreen) {
@@ -28,7 +28,7 @@ const card = props => {
     nameColor.push(styles.textred);
   }
   if (props.ClickedYellow) {
-    styleCardBody.backgroundColor = "yellow";
+    styleCardBody.backgroundColor = "orangered";
     nameColor.push(styles.textred);
   }
 
