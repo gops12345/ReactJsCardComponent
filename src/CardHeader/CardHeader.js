@@ -41,12 +41,12 @@ const card = props => {
     <div className={styles.cardContainer}>
       {/* color code */}
 
-      <div className={styles.middle}>
+      {props.show?<div className={styles.middle}>
         <div className={classr.join(" ")} onClick={props.ClickedRedColor} />
         <div className={classb.join(" ")} onClick={props.ClickedBlueColor} />
         <div className={classg.join(" ")} onClick={props.ClickedGreenColor} />
         <div className={classy.join(" ")} onClick={props.ClickedYellowColor} />
-      </div>
+      </div>:null}
 
       <div style={styleCardBody}>
         <div className={styles.box_main}>DEV</div>

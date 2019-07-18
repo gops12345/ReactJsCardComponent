@@ -78,6 +78,7 @@ class Card extends Component {
           ClickedBlueColor={this.clickedBlueColor}
           ClickedGreenColor={this.clickedGreenColor}
           ClickedYellowColor={this.clickedYellowColor}
+          show = {this.state.showColorTab}
         />
         <FontAwesomeIcon
           icon="ellipsis-h"
