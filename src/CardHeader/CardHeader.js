@@ -14,22 +14,28 @@ const card = props => {
     fontSize: "1.5rem"
   };
 
-  const nameColor = [styles.textFix];
+  const styleName = {
+    position: 'relative',
+    top: '9px',
+    color: 'orange'
+  };
+
+ 
   if (props.ClickedRed) {
     styleCardBody.backgroundColor = "orange";
-    nameColor.push(styles.textred);
+    styleName.color = 'orange';
   }
   if (props.ClickedBlue) {
     styleCardBody.backgroundColor = "palevioletred";
-    nameColor.push(styles.textred);
+    styleName.color = 'palevioletred';
   }
   if (props.ClickedGreen) {
     styleCardBody.backgroundColor = "green";
-    nameColor.push(styles.textred);
+    styleName.color = 'green';
   }
   if (props.ClickedYellow) {
     styleCardBody.backgroundColor = "orangered";
-    nameColor.push(styles.textred);
+    styleName.color = 'orangered';
   }
 
   const classr = [styles.box, styles.red];
@@ -54,7 +60,7 @@ const card = props => {
         <h1>{props.bodyMessage}</h1>
 
         <div className={styles.side_box}>
-          <p1>{props.name}</p1>
+          <p1 style = {styleName}>{props.name}</p1>
           <div className={styles.imageSpace} />
         </div>
       </div>
