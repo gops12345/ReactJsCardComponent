@@ -16,7 +16,9 @@ class Card extends Component {
     clickedGreen: false,
     clickedYellow: false,
 
-    showColorTab: false
+    showColorTab: false,
+
+    editCard: false
   };
 
   clickedRedColor = () => {
@@ -64,31 +66,74 @@ class Card extends Component {
     });
   };
 
+  //Edit Card
+
+  editCard = () => {
+    const currentState = this.state.editCard;
+    this.setState({
+      editCard: !currentState
+    });
+  };
+
   render() {
     return (
       <div>
-        <CHead
-          bodyMessage={this.state.bodyMessage}
-          name={this.state.name}
-          ClickedRed={this.state.clickedRed}
-          ClickedBlue={this.state.clickedBlue}
-          ClickedGreen={this.state.clickedGreen}
-          ClickedYellow={this.state.clickedYellow}
-          ClickedRedColor={this.clickedRedColor}
-          ClickedBlueColor={this.clickedBlueColor}
-          ClickedGreenColor={this.clickedGreenColor}
-          ClickedYellowColor={this.clickedYellowColor}
-          show = {this.state.showColorTab}
-        />
-        <FontAwesomeIcon
-          icon="ellipsis-h"
-          className={styles.ellipPosition}
-          onClick={this.colorTabToggle}
-        />
-        <CFoot
-          footerMessage={this.state.footerMessage}
-          footerHeading={this.state.footerHeading}
-        />
+        {this.state.editCard ? (
+          <div>
+            <CHead
+              bodyMessage={this.state.bodyMessage}
+              name={this.state.name}
+              ClickedRed={this.state.clickedRed}
+              ClickedBlue={this.state.clickedBlue}
+              ClickedGreen={this.state.clickedGreen}
+              ClickedYellow={this.state.clickedYellow}
+              ClickedRedColor={this.clickedRedColor}
+              ClickedBlueColor={this.clickedBlueColor}
+              ClickedGreenColor={this.clickedGreenColor}
+              ClickedYellowColor={this.clickedYellowColor}
+              show={this.state.showColorTab}
+            />
+            <FontAwesomeIcon
+              icon="ellipsis-h"
+              className={styles.ellipPosition}
+              onClick={this.colorTabToggle}
+            />
+            <CFoot
+              footerMessage={this.state.footerMessage}
+              footerHeading={this.state.footerHeading}
+            />
+          </div>
+        ) : (
+          <div>
+            <CHead
+              // bodyMessage={this.state.bodyMessage}
+              name={this.state.name}
+              ClickedRed={this.state.clickedRed}
+              ClickedBlue={this.state.clickedBlue}
+              ClickedGreen={this.state.clickedGreen}
+              ClickedYellow={this.state.clickedYellow}
+              ClickedRedColor={this.clickedRedColor}
+              ClickedBlueColor={this.clickedBlueColor}
+              ClickedGreenColor={this.clickedGreenColor}
+              ClickedYellowColor={this.clickedYellowColor}
+              show={this.state.showColorTab}
+            />
+            <FontAwesomeIcon
+              icon="ellipsis-h"
+              className={styles.ellipPosition}
+              onClick={this.colorTabToggle}
+            />
+            <CFoot
+              footerMessage={this.state.footerMessage}
+              footerHeading={this.state.footerHeading}
+            />
+          </div>
+        )}
+
+        <button className={styles.buttonPosition} onClick={this.editCard}>
+          {" "}
+          Edit{" "}
+        </button>
       </div>
     );
   }

@@ -122,3 +122,10 @@
     
    
 }
+
+.buttonPosition {
+    margin: auto;
+    position: relative;
+    left:950px;
+    width: 100px;
+}
