@@ -11,7 +11,7 @@ class Card extends Component {
     footerMessage: "Something Something else i fnot something else",
     footerHeading: "Learn React? Start small.",
     name: "Gopala Agrawal",
-    clickedRed: true,
+    clickedRed: false,
     clickedBlue: false,
     clickedGreen: false,
     clickedYellow: false,
@@ -21,24 +21,36 @@ class Card extends Component {
 
   clickedRedColor = () => {
     this.setState({
+      clickedBlue: false,
+      clickedGreen: false,
+      clickedYellow: false,
       clickedRed: true
     });
   };
 
   clickedBlueColor = () => {
     this.setState({
+      clickedBlue: false,
+      clickedGreen: false,
+      clickedYellow: false,
       clickedBlue: true
     });
   };
 
   clickedGreenColor = () => {
     this.setState({
+      clickedBlue: false,
+      clickedGreen: false,
+      clickedYellow: false,
       clickedGreen: true
     });
   };
 
   clickedYellowColor = () => {
     this.setState({
+      clickedBlue: false,
+      clickedGreen: false,
+      clickedYellow: false,
       clickedYellow: true
     });
   };
@@ -58,15 +70,14 @@ class Card extends Component {
         <CHead
           bodyMessage={this.state.bodyMessage}
           name={this.state.name}
-          clickedRed = {this.state.clickedRed}
-          clickedBlue= {this.state.clickedBlue}
-          clickedGreen= {this.state.clickedGreen}
-          clickedYellow= {this.state.clickedYellow}
-          clickedRedColor ={this.state.clickedRedColor}
-          clickedBlueColor ={this.state.clickedBlueColor}
-          clickedGreenColor ={this.state.clickedGreenColor}
-          clickedYellowColor ={this.state.clickedYellowColor}
-          
+          ClickedRed={this.state.clickedRed}
+          ClickedBlue={this.state.clickedBlue}
+          ClickedGreen={this.state.clickedGreen}
+          ClickedYellow={this.state.clickedYellow}
+          ClickedRedColor={this.clickedRedColor}
+          ClickedBlueColor={this.clickedBlueColor}
+          ClickedGreenColor={this.clickedGreenColor}
+          ClickedYellowColor={this.clickedYellowColor}
         />
         <FontAwesomeIcon
           icon="ellipsis-h"
