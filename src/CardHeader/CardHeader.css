@@ -7,7 +7,7 @@
     padding: 80px 30px 80px 30px; 
     color: white;
     font-size: 1.5rem;
-    background: orange;
+    
 }
 
 .box_main{
@@ -127,20 +127,4 @@
     left: 1085px;
     
    
-}
-
-textarea {
-  width: 82%;
-  height: 50px;
-  position: relative;
-  top: 0px;
-  left: 5px;
-  background-color: transparent;
-  border: 0px solid;
-  color: white;
-  font-size: 3rem;
-}
-
-input:hover {
- cursor: pointer;
 }
