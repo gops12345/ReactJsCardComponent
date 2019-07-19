@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../CardFoot/CardFoot.css';
+import style from './EditCardFoot.css';
 
 const cardFoot = (props) =>{
     return(

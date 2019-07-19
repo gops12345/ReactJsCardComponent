@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import CHead from "../CardHeader/CardHeader";
-import CFoot from "../CardFoot/CardFoot";
+import CHead from "../EditCardHeader/EditCardHeader";
+import CFoot from "../EditCardFoot/EditCardFoot";
 import CChange from "../../ColorChange/ColorChange";
-import styles from "../CardHeader/CardHeader.css";
+import styles from "../EditCardHeader/EditCardHeader.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Card extends Component {
   state = {
-    bodyMessage: "Learn React? Start small.",
+    bodyMessage: "",
     footerMessage: "Something Something else i fnot something else",
     footerHeading: "Learn React? Start small.",
     name: "Gopala Agrawal",
@@ -66,7 +66,7 @@ class Card extends Component {
     });
   };
 
-  //Edit Card
+  //-----------------------Edit Card--------------------------------------
 
   editCard = () => {
     const currentState = this.state.editCard;
@@ -81,7 +81,6 @@ class Card extends Component {
         {this.state.editCard ? (
           <div>
             <CHead
-              bodyMessage={this.state.bodyMessage}
               name={this.state.name}
               ClickedRed={this.state.clickedRed}
               ClickedBlue={this.state.clickedBlue}
@@ -129,11 +128,6 @@ class Card extends Component {
             />
           </div>
         )}
-
-        <button className={styles.buttonPosition} onClick={this.editCard}>
-          {" "}
-          Edit{" "}
-        </button>
       </div>
     );
   }

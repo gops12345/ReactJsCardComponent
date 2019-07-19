@@ -129,3 +129,14 @@
     left:950px;
     width: 100px;
 }
+
+textarea{
+    background: orange;
+    border: 0px solid;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    border-radius: 2px;
+    position: relative;
+
+}

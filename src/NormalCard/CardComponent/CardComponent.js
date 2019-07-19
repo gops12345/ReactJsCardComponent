@@ -4,10 +4,12 @@ import CFoot from "../CardFoot/CardFoot";
 import CChange from "../../ColorChange/ColorChange";
 import styles from "../CardHeader/CardHeader.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ECHead from "../../EditableCard/EditCardHeader/EditCardHeader";
+import ECFoot from "../../EditableCard/EditCardFoot/EditCardFoot";
 
 class Card extends Component {
   state = {
-    bodyMessage: "Learn React? Start small.",
+    bodyMessage: "",
     footerMessage: "Something Something else i fnot something else",
     footerHeading: "Learn React? Start small.",
     name: "Gopala Agrawal",
@@ -75,13 +77,20 @@ class Card extends Component {
     });
   };
 
+  //-------------------------Getting Body Text----------------------------------------
+
+  bodyText = event => {
+    this.setState({
+      bodyMessage: event.target.value
+    });
+  };
+
   render() {
     return (
       <div>
         {this.state.editCard ? (
           <div>
-            <CHead
-              bodyMessage={this.state.bodyMessage}
+            <ECHead
               name={this.state.name}
               ClickedRed={this.state.clickedRed}
               ClickedBlue={this.state.clickedBlue}
@@ -92,13 +101,14 @@ class Card extends Component {
               ClickedGreenColor={this.clickedGreenColor}
               ClickedYellowColor={this.clickedYellowColor}
               show={this.state.showColorTab}
+              change={this.bodyText}
             />
             <FontAwesomeIcon
               icon="ellipsis-h"
               className={styles.ellipPosition}
               onClick={this.colorTabToggle}
             />
-            <CFoot
+            <ECFoot
               footerMessage={this.state.footerMessage}
               footerHeading={this.state.footerHeading}
             />
@@ -106,7 +116,7 @@ class Card extends Component {
         ) : (
           <div>
             <CHead
-              // bodyMessage={this.state.bodyMessage}
+              bodyMessage={this.state.bodyMessage}
               name={this.state.name}
               ClickedRed={this.state.clickedRed}
               ClickedBlue={this.state.clickedBlue}
