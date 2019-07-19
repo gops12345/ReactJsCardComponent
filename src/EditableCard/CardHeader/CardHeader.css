@@ -45,7 +45,7 @@
 .imageSpace{
     background-size: cover;
     background-position: center;
-    background-image: url(../Img/Img.JPEG); 
+    background-image: url(../../Img/Img.JPEG); 
     
     position: relative;
     top: 0px;

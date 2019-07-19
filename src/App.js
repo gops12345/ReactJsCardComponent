@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './App.css';
-import Card from './CardComponent/CardComponent';
+import Card from './NormalCard/CardComponent/CardComponent';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 

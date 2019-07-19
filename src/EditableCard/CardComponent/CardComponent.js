@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import CHead from "../CardHeader/CardHeader";
 import CFoot from "../CardFoot/CardFoot";
-import CChange from "../ColorChange/ColorChange";
+import CChange from "../../ColorChange/ColorChange";
 import styles from "../CardHeader/CardHeader.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

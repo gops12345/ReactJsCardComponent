@@ -1,6 +1,6 @@
 import React from "react";
 import CFoot from "../CardFoot/CardFoot";
-import styles from "../CardHeader/CardHeader.css";
+import styles from "./CardHeader.css";
 
 const card = props => {
   const styleCardBody = {
