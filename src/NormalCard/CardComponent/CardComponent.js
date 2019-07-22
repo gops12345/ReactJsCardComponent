@@ -144,6 +144,12 @@ class Card extends Component {
           {" "}
           Edit{" "}
         </button>
+
+        <button className={styles.buttonPosition} onClick={this.editCard}>
+          {" "}
+          Save{" "}
+        </button>
+        
       </div>
     );
   }
