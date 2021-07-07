@@ -1,13 +1,7 @@
 
 .cardBody{
-    width: 35%;
-    box-shadow: 0px 2px 2px 2px #ccc;
-    border-radius: 5px;
-    margin: auto;
-    padding: 80px 30px 80px 30px; 
-    color: white;
-    font-size: 1.5rem;
-    background: orange;
+    
+    
 }
 
 .box_main{
@@ -51,7 +45,7 @@
 .imageSpace{
     background-size: cover;
     background-position: center;
-    background-image: url(../Img/Img.JPEG); 
+    background-image: url(../../Img/Img.JPEG); 
     
     position: relative;
     top: 0px;
@@ -129,18 +123,9 @@
    
 }
 
-textarea {
-  width: 82%;
-  height: 50px;
-  position: relative;
-  top: 0px;
-  left: 5px;
-  background-color: transparent;
-  border: 0px solid;
-  color: white;
-  font-size: 3rem;
-}
-
-input:hover {
- cursor: pointer;
+.buttonPosition {
+    margin: auto;
+    position: relative;
+    left:950px;
+    width: 100px;
 }

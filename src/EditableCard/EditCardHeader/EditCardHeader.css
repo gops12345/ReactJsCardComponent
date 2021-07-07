@@ -1,0 +1,142 @@
+
+.cardBody{
+    
+    
+}
+
+.box_main{
+    float: left;
+    position: relative;
+    left: -25px;
+    top: -75px;
+    display: inline;
+    border: 1px solid black;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.side_box{
+    float: right;
+    display: inline-block;
+    position: relative;
+    top:23px;
+    left: 25px;
+    
+    text-align: center;
+    padding: 1px 4px 1px 4px;
+    border: 1px solid white;
+    width: 40%;
+    font-size:1.1rem; 
+    background: white;
+    color: orange;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+.textFix{
+    position: relative;
+    top: 9px;
+}
+
+.imageSpace{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../Img/Img.JPEG); 
+    
+    position: relative;
+    top: 0px;
+    left: 3px;
+    overflow: auto;
+    float: right;
+    width: 50px;
+    min-height: 48px; 
+
+}
+
+.box{
+   
+    display: inline;
+    width: 6.5%;
+    padding: 10px 30px 10px 30px;
+}
+
+.red{
+    background: orange;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: orangered;
+}
+
+.blue{
+    
+    background-color:  palevioletred;
+}
+
+.orange{
+    background-color: orange;
+}
+
+
+
+.textred{
+    color: orange;
+}
+
+.textgreen{
+    color: green;
+}
+
+.textyellow{
+    color: orangered;
+}
+
+.textblue{
+    color: palevioletred;
+}
+
+.textorange{
+    color: orange;
+}
+
+.ellipPosition{
+   
+    position: absolute;
+    left: 1290px;
+    top: 10px;
+    
+    
+}
+.middle{
+    position: absolute;
+    top: 12px;
+    left: 1085px;
+    
+   
+}
+
+.buttonPosition {
+    margin: auto;
+    position: relative;
+    left:950px;
+    width: 100px;
+}
+
+textarea{
+    background: orange;
+    border: 0px solid;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    border-radius: 2px;
+    position: relative;
+
+}
